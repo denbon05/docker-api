@@ -1,5 +1,5 @@
 {
-  "name": "node-docker-api",
+  "name": "docker-api-node",
   "version": "1.1.23",
   "description": "Docker Remote API driver for node",
   "main": "./lib/docker",
@@ -13,19 +13,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AgustinCB/docker-api.git"
+    "url": "git+https://github.com/denbon05/docker-api.git"
   },
   "keywords": [
     "docker",
     "api",
     "node"
   ],
-  "author": "AgustinCB",
+  "author": "denbon05",
   "license": "\tGPL-2.0",
   "bugs": {
-    "url": "https://github.com/AgustinCB/docker-api/issues"
+    "url": "https://github.com/denbon05/docker-api/issues"
   },
-  "homepage": "https://github.com/AgustinCB/docker-api#readme",
+  "homepage": "https://github.com/denbon05/docker-api#readme",
   "devDependencies": {
     "@types/node": "10.5.1",
     "ava": "^0.17.0",
