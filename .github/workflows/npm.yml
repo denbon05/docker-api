@@ -19,4 +19,4 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          package: api-docker-node
+          package: docker-api-node
