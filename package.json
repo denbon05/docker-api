@@ -1,12 +1,12 @@
 {
   "name": "docker-api-node",
-  "version": "1.1.25",
+  "version": "1.1.26",
   "description": "Docker Remote API driver for node",
-  "main": "./lib/docker",
-  "typings": "./lib/docker",
+  "main": "./dist/docker",
+  "typings": "./dist/docker",
   "scripts": {
     "watch-test": "nodemon --watch build --watch test --exec 'npm run test'",
-    "lint": "./node_modules/tslint/bin/tslint -c tslint.json 'src/**/*.ts'",
+    "lint": "npx tslint -c tslint.json 'src/**/*.ts'",
     "test": "chmod +x test.sh; ./test.sh",
     "gendoc": "typedoc --out docs src",
     "build": "tsc"
