@@ -323,7 +323,7 @@ export class Container {
     Created: number;
     Ports: number[];
     Labels: any;
-    State: 'running' | 'exited' | 'removing';
+    State: 'running' | 'exited' | 'removing' | 'created';
     Status: string;
     HostConfig: any;
     NetworkSettings: any;
