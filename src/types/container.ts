@@ -1,3 +1,9 @@
+// TODO specify types
+
+interface ILabels {
+  [key: string]: string;
+}
+
 export interface ContainerData {
   Id: string;
   Names: string[];
@@ -6,8 +12,14 @@ export interface ContainerData {
   Command: string;
   Created: number;
   Ports: number[];
-  Labels: any;
-  State: 'running' | 'exited';
+  Labels: ILabels;
+  State:
+    | 'running'
+    | 'exited'
+    | 'removing'
+    | 'created'
+    | 'paused'
+    | 'restarting';
   Status: string;
   HostConfig: any;
   NetworkSettings: any;

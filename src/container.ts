@@ -5,6 +5,7 @@ import * as fs from 'fs';
 import { Stream, Readable } from 'stream';
 
 import { Image } from './image';
+import { ContainerData } from './types/container';
 
 /**
  * Class representing container execution
@@ -314,21 +315,7 @@ export class Container {
   fs: ContainerFs;
   exec: ExecManager;
   Warnings: Array<String> = [];
-  data: {
-    Id: string;
-    Names: string[];
-    Image: string;
-    ImageID: string;
-    Command: string;
-    Created: number;
-    Ports: number[];
-    Labels: any;
-    State: 'running' | 'exited' | 'removing' | 'created';
-    Status: string;
-    HostConfig: any;
-    NetworkSettings: any;
-    Mounts: any[];
-  };
+  data: ContainerData;
 
   /**
    * Create an container Object
